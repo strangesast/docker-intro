@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <pre id="pre"></pre>
+    <script>
+      const el = document.getElementById("pre");
+      (async () => {
+        const result = await fetch("/api");
+        console.log(result);
+      })();
+    </script>
+  </body>
+</html>
